@@ -11,7 +11,7 @@ const createUser = asyncHandler(
             const newUser = await User.create(req.body);
             res.json(newUser);
         } else {
-            // User yang Sudah ada
+            // User Sudah ada
             throw new Error("User Sudah Ada");
         }
     
